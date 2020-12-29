@@ -2,12 +2,14 @@ package org.socraagile.kata;
 
 public class Fibonacci {
     public int computeNth(int number) {
-        if( number == 2)
+        return fibonacci(number);
+    }
+
+    private int fibonacci(int number){
+        if(number == 0)
+            return 0;
+        if(number == 1)
             return 1;
-        if(number == 3)
-            return 2;
-        if(number == 4)
-            return 3;
-        return number;
+        return fibonacci(number-2) + fibonacci(number-1);
     }
 }
