@@ -18,7 +18,7 @@ public class FibonacciShould {
     public void return_value_when_number(int number, int value) {
         Fibonacci fibonacci = new Fibonacci();
 
-        int result = fibonacci.computeNth(1);
+        int result = fibonacci.computeNth(number);
 
         assertThat(result).isEqualTo(value);
     }
