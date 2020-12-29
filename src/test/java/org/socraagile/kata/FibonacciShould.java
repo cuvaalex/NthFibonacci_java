@@ -16,7 +16,8 @@ public class FibonacciShould {
             "0, 0",
             "1, 1",
             "2, 1",
-            "3, 2"
+            "3, 2",
+            "4, 3"
     })
     public void return_value_when_number(int number, int value) {
         Fibonacci fibonacci = new Fibonacci();
