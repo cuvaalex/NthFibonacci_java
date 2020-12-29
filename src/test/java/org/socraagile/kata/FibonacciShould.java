@@ -13,7 +13,8 @@ public class FibonacciShould {
     @DisplayName("The fibonacci number of 1 is 1")
     @ParameterizedTest(name = "{index} => F({0}) => {1}")
     @CsvSource({
-        "0, 0"
+            "0, 0",
+            "1, 1"
     })
     public void return_value_when_number(int number, int value) {
         Fibonacci fibonacci = new Fibonacci();
