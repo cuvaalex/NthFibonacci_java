@@ -15,7 +15,8 @@ public class FibonacciShould {
     @CsvSource({
             "0, 0",
             "1, 1",
-            "2, 1"
+            "2, 1",
+            "3, 2"
     })
     public void return_value_when_number(int number, int value) {
         Fibonacci fibonacci = new Fibonacci();
